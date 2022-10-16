@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">MurexTheCoder Tutorial Feedback Form</h1>
+    <p id="description">This is a feedback form for my youtube coding tutorials</p>
+  </body>
+
+  <form id="survey-form">
+
+    <fieldset>
+
+      <label for="name" id="name-label">Enter your name: <input id="name" type="text" placeholder="Name" required/></label>
+      <label for="email" id="email-label">Enter your Email: <input id="email"type="email" placeholder="Email" required/></label>
+      <label for="number" id="number-label">Enter your Age: <input id="number"type="number" placeholder="Age" min="18" max="70"required/></label>
+      <p class="question">On average how many hours do you spend on my youtube Channel?</p>
+      <label for="option1"><input id="option1" type="radio" name="time" class="inline" value="1"/> 0 - 1 hour</label>
+      <label for="option2"><input id="option2" type="radio" name="time" class="inline" value="2"/> 1 - 2 hours</label>
+      <label for="option3"><input id="option3" type="radio" name="time" class="inline" value="3"/> 2 - 3 hours</label>
+      <label for="option 4"><input id="option4" type="radio" name="time" class="inline" value="4"/> More than 3 hours</label>
+
+    </fieldset>
+
+    <fieldset>Do You find my videos helpful?
+
+      <label><input id="yes" type="checkbox" required name="answer" class="inline" value="yes" /> Yes</label>
+      <label><input id="yes" type="checkbox" value="no" required name="answer" class="inline" /> No</label>
+
+      </fieldset>
+
+    <fieldset>
+
+      <label for="dropdown" >Which Langauge did you enjoy?
+          <select name="language" id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Python</option>
+            <option value="2">Java</option>
+            <option value="3">Javscript</option>
+            <option value="4">HTML</option>
+            <option value="5">C++</option>
+            <option value="5">c#</option>
+            <option value="5">C</option>
+          </select>
+        </label>
+
+         <label for="feedback">Additional Feedback:
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="i Enjoy your videos except that...."></textarea>
+
+        </label>
+      </fieldset>
+
+
+      <fieldset>
+        <input id="submit" type="submit">
+      </fieldset>
+  </form>
+
+</html>
